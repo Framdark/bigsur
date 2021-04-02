@@ -1,0 +1,78 @@
+.dockDiv{
+    width: auto;
+    height: auto;
+    background-color: #ffffff66;
+    backdrop-filter: blur(20px);
+    box-shadow:
+    0 0 0 1px #f4f4f49c,
+    0 0 0 2px #42424270;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3px 0 3px;
+}
+
+.dockSeparator{
+    width: 1px;
+    height: 34px;
+    margin: 3px 6px 5px 7px;
+    background-color: black;
+    opacity: 26%;
+}
+
+.dockIcon img{
+    width: 37px;
+    height: 37px;
+    padding: 3px 1px 5px 1px;
+    image-rendering: crisp-edges;
+    position: relative;
+}
+
+.icnIndicator{
+    width: 4px;
+    height: 4px;
+    background-color: #000000d9;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 1px;
+    left: 20px;
+}
+
+.dockFolder img{
+    width: 37px;
+    height: 37px;
+    padding: 3px 1px 5px 2px;
+    image-rendering: crisp-edges;
+}
+
+.dockTrash img{
+    width: 37px;
+    height: 37px;
+    padding: 3px 1px 5px 2px;
+    image-rendering: crisp-edges;
+}
+
+.dockItem{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.dockLbl{
+    position: absolute;
+    width: auto;
+    background-color: white;
+    border-radius: 4px;
+    padding: 5px 10px 5px 10px;
+    opacity: 0;
+    z-index: 1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    bottom: 130%;
+}
+
+.dockItem:hover .dockLbl{
+    opacity: 1;
+}

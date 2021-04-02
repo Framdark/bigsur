@@ -1,0 +1,23 @@
+.finderBar{
+    width: 100%;
+    height: 24px;
+    background-color: #00000020;
+    backdrop-filter: blur(200px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'SF Pro Display';
+    color: white;
+    display: flex;
+}
+
+.fbItem{
+    padding: 3px 16px 5px 16px;
+    border-radius: 4px;
+    background-color: black;
+    width: auto;
+}
+
+.fbiApple{
+    margin-left: 6px;
+}

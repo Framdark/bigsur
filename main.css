@@ -1,0 +1,11 @@
+body{
+    background-image: url("walls/day.jpg");
+    background-color: #EEEEEE;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
