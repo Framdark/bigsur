@@ -29,6 +29,15 @@
 
 .dropdown .dropbtn{
     margin-left: 6px;
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+}
+
 }
 
 .dropdown{
