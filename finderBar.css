@@ -18,16 +18,25 @@
     width: auto;
 }
 
-.fbiApple{
+.finderbar a{
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown .dropbtn{
     margin-left: 6px;
 }
 
-.dropdown {
+.dropdown{
     float: left;
     overflow: hidden;
 }
 
-.dropdown-content {
+.dropdown-content{
     display: none;
     position: absolute;
     background-color: #00000020;
@@ -36,7 +45,7 @@
 z-index: 1;
 }
 
-.dropdown-content a {
+.dropdown-content a{
     float: none;
     color: black;
     padding: 12px 16px;
@@ -45,10 +54,10 @@ z-index: 1;
     text-align: left;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover{
     background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content{
     display: black;
 }
