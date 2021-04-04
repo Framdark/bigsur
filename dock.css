@@ -1,11 +1,11 @@
 .dockDiv{
     width: auto;
     height: auto;
-    background-color: #ffffff66;
+    background-color: var(--dock-back-color);
     backdrop-filter: blur(20px);
     box-shadow:
-    0 0 0 1px #f4f4f49c,
-    0 0 0 2px #42424270;
+    0 0 0 1px var(--dockb1),
+    0 0 0 2px var(--dockb2);
     border-radius: 12px;
     display: flex;
     justify-content: center;
@@ -21,8 +21,8 @@
     width: 1px;
     height: 34px;
     margin: 3px 6px 5px 7px;
-    background-color: black;
-    opacity: 26%;
+    background-color: var(--dock-sep-color);
+    opacity: 1;
 }
 
 .dockIcon img{
@@ -36,7 +36,7 @@
 .icnIndicator{
     width: 4px;
     height: 4px;
-    background-color: #000000d9;
+    background-color: var(--dock-ind-color);
     border-radius: 5px;
     position: absolute;
     bottom: 1px;

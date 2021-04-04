@@ -1,6 +1,6 @@
 body{
-    background-image: url("walls/day.jpg");
-    background-color: #EEEEEE;
+    background-image: var(--bg-image);
+    background-color: var(--bw-clr);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -9,24 +9,26 @@ body{
 
 .aboutBox{
     width: 588px;
-    height: 370px;
+    height: 332px;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #f6eeee;
+    background-color: var(--window-body-color);
     border-radius: 11px;
-    box-shadow: 0px 25px 110px 0px rgba(0, 0, 0, 0.25);
-    border: solid 1px #00000060;
+    box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.7);
+    border: solid 1px #00000020;
+    display: flex;
 }
 
 .titleBar{
     width: 100%;
     height: 38px;
-    background-color: #fbf2f2;
-    border-bottom: solid 1px #d0c8c8;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
+    position: absolute;
+    background-color: var(--titlebar-color);
+    border-bottom: solid 1px var(--window-sep-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
@@ -35,6 +37,7 @@ body{
     display: flex;
     height: 100%;
     padding: 13px;
+    width: 76px
 }
 
 .tlButton{
@@ -71,20 +74,75 @@ body{
     border: solid 1px #bfb5b5;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.atFooter{
+    width: 100%;
+    height: 6%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 15px;
+    display: flex;
+    font-size: 11px;
+    justify-content: center;
+    color: var(--about-footer-color);
+    font-family: 'SF Pro Display'
+}
+
+.aboutImage{
+    width: 195px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    border-bottom-left-radius: 22px;
+    align-items: center;
+    justify-content: center;
+}
+
+.aiImage{
+    background-image: var(--about-image);
+    background-origin: padding-box;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 135px;
+    height: 135px;
+}
+
 .aboutText{
     display: flex;
     flex-direction: column;
-    width: 100%;
+
+    width: 392px;
+    height: 100%;
+    align-content: center;
+    text-align: left;
     justify-content: center;
-    text-align: center;
+
+    bottom: 0;
+    right: 0;
+    position: absolute;
+
+    color: var(--text-color);
+    border-bottom-right-radius: 22px;
 }
 
 .atHead{
     font-family: 'SF Pro Display';
     font-weight: normal;
     padding: 0;
-    margin: 20px 0 0 0;
+    margin: 0;
     font-size: 30px;
+    color: var(--text-color);
 }
 
 .atVersion{
@@ -98,6 +156,11 @@ body{
 .atBody{
     font-family: 'SF Pro Display';
     font-weight: normal;
-    padding: 0 30px 0 30px;
-    margin: 20px 0 0 0;
+    padding: 7px 30px 0 0;
+    margin: 0;
+    font-size: 11.5px;
+}
+
+.atB1{
+    padding: 17px 30px 0 0;
 }

@@ -1,0 +1,35 @@
+@media (prefers-color-scheme: dark) {
+	:root{
+    --bw-clr: #000000;
+	--bg-image: url("walls/night.jpg");
+    --titlebar-color: #3b363c;
+    --window-body-color: #282128;
+    --window-sep-color: #000000;
+    --dock-back-color: #00000020;
+    --dock-sep-color: #8c5461;
+    --dock-ind-color: #ca8f9c;
+    --dockb1: #f4f4f417;
+    --dockb2: #42424270;
+    --text-color: #deddde;
+    --about-image: url("aboutImages/dark.png");
+    --about-footer-color: #5d585d;
+}
+}
+  
+@media (prefers-color-scheme: light) {
+	:root{
+    --bw-clr: #ffffff;
+	--bg-image: url("walls/day.jpg");
+    --titlebar-color: #fbf2f2;
+    --window-body-color: #f6eeee;
+    --window-sep-color: #d0c8c8;
+    --dock-back-color: #ffffff50;
+    --dock-sep-color: #6a3672;
+    --dock-ind-color: #1b002f;
+    --dockb1: #f4f4f49c;
+    --dockb2: #42424270;
+    --text-color: #262424;
+    --about-image: url("aboutImages/light.png");
+    --about-footer-color: #bfb9b9;
+}
+}

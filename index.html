@@ -1,12 +1,13 @@
 <html>
 <head>
     <title>macOS Big Sur</title>
+    <link rel="stylesheet" href="variables.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="dock.css">
     <link rel="stylesheet" href="finderBar.css">
 </head>
 
-<body>
+<body onload="myFunction()">
 
 <div class="finderBar">
     <div class="fbItem fbiApple">􀣺</div>
@@ -20,11 +21,19 @@
         <div class="tlButton tlbMax"></div>
     </div>
     </div>
+    <div class="aboutImage">
+        <div class="aiImage"></div>
+    </div>
     <div class="aboutText">
         <p class="atHead"><b>macOS</b> Big Sur</p>
         <p class="atVersion">Version HTML Beta</p>
-        <p class="atBody">This is a project that attempts to recreate macOS Big Sur in as much detail as possible, through HTML, CSS, and JavaScript. It's not perfect, and it never will be, but it's a fun hobby-project, and could be a <a href="https://twitter.com/iD0ts/status/1377656693513932801?s=20">cool idea for website navigation!</a></p>
+        <p class="atBody atB1"><b>cssBook Pro (Retina, Early 2021)</b></p>
+        <p class="atBody atB2" id="atB2"></p>
+        <p class="atBody atB3"><b>Memory  </b>Yes</p>
+        <p class="atBody atB4"><b>Graphics  </b> Also yes</p>
+        <p class="atBody atB5"><b>Serial Number  </b> TIARSOC143TY</p>
     </div>
+    <div class="atFooter">™ and © 1983-2021 Apple Inc. All Rights Reserved. <a href="/Library/Documentation/License.lpdf/">Licence Agreement</a></div>
 </div>
 
 <div class="dockDiv">
@@ -67,6 +76,13 @@
 </div>
 
 </div>
+
+<script>
+    function myFunction() {
+  var x = "<b>Processor</b>" + " " + " " + navigator.platform;
+  document.getElementById("atB2").innerHTML = x;
+}
+</script>
 
 </body>
 
