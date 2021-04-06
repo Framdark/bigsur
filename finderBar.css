@@ -21,6 +21,8 @@
     width: auto;
 }
 
+/*Should be able to use the button for the WiFi button and other buttons*/
+
 .dropbtn {
   color: white;
   font-size: 16px;
@@ -34,12 +36,14 @@
   display: inline-block;
 }
 
+/*dropdown content and dropdown content a could be used as template for other dropdown menus but still needs a lot of work*/
+
 .dropdown-content {
-  display: block;
+  display: none;
   position: absolute;
-  Float: left;
+  border-radius: 25px;
   right: 0;
-  background-color: #f9f9f9;
+  background-color: rgba(232,233,235, 0.8);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -52,6 +56,7 @@
   display: block;
 }
 
+//#E8E9EB
+
 .dropdown-content a:hover {background-color: #007AFF;}
 .dropdown:hover .dropdown-content {display: block;}
-
