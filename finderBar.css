@@ -12,15 +12,6 @@
  backdrop-filter: blur(200px);
   }
 
-
-
-.fbItem{
-    padding: 3px 16px 5px 16px;
-    border-radius: 4px;
-    background-color: transparent;
-    width: auto;
-}
-
 /*Should be able to use the button for the WiFi button and other buttons*/
 
 .dropbtn {
@@ -39,24 +30,27 @@
 /*dropdown content and dropdown content a could be used as template for other dropdown menus but still needs a lot of work*/
 
 .dropdown-content {
-  display: none;
   position: absolute;
-  border-radius: 25px;
+  display: none;
+  border-radius: 8px;
   right: 0;
   background-color: rgba(232,233,235, 0.8);
-  min-width: 160px;
+  width: 260px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
+  font-size: 15px;
+  padding: 6px 8px;
+  border-radius: 7px;
   text-decoration: none;
   display: block;
 }
 
-//#E8E9EB
-
 .dropdown-content a:hover {background-color: #007AFF;}
-.dropdown:hover .dropdown-content {display: block;}
+.show {display: block;}
+
+.divider {
+  border-top: 2px solid #1B1E23;
+}

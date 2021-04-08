@@ -7,20 +7,33 @@
     <link rel="stylesheet" href="finderBar.css">
 <meta charset=“UTF-8”>
 </head>
-
 <body onload="myFunction()">
 
 <div class="finderBar">
 </div>
 
 <div class="dropdown">
-  <button class="dropbtn">&#xF8FF</button>
-  <div class="dropdown-content"
-style="left:0;">
-    <a href="#">Test1</a>
-    <a href="#">Test2</a>
+    <button onclick="meFunction()"
+  class="dropbtn">&#xF8FF</button>
+  <div id="myDropdown" class="dropdown-content"style="left:0;">
+    <a href="#">About This Mac</a>
+    <div class="divider"></div>
+    <a href="#">System Preferences...</a>
+    <a href="#">App Store...</a>
+    <div class="divider"></div>
+    <a href="#">Recent Items</a>
+    <div class="divider"></div>
+    <a href="#">Force Quit Finder</a>
+    <div class="divider"></div>
+    <a href="#">Sleep</a>
+    <a href="#">Restart...</a>
+    <a href="#">Shut Down...</a>
+    <div class="divider"></div>
+    <a href="#">Lock Screen</a>
+    <a href="#">Log Out</a>
   </div>
 </div>
+
 
 
 <div class="aboutBox">
@@ -158,6 +171,26 @@ style="left:0;">
   document.getElementById("atB2").innerHTML = x;
 }
 </script>
+
+<script>
+    function meFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    
 
 </body>
 
